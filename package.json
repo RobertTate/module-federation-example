@@ -1,0 +1,20 @@
+{
+  "name": "module-fed-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm:start --prefix ./apps/host\" \"npm:start --prefix ./apps/app1\" \"npm:start --prefix ./apps/app2\""
+  },
+  "workspaces": [
+    "host",
+    "app1",
+    "app2"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
